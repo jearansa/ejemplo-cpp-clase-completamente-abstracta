@@ -1,4 +1,4 @@
-
+Ôªø
 #include "IntegerCompara.h"
 #include <iostream>
 
@@ -11,12 +11,12 @@ IntegerCompara::IntegerCompara(int i){
 bool IntegerCompara::mayorQue(Compara *c){
      IntegerCompara * ic;
      /*
-        Observa la conversiÛn de tipos que hacemos aquÌ,
+        Observa la conversi√≥n de tipos que hacemos aqu√≠,
         al estilo de la que realizamos en Java;
-        La operaciÛn que hace la conversiÛn de tipos se
+        La operaci√≥n que hace la conversi√≥n de tipos se
         denomina dynamic_cast<nombre_tipo>:
-        Al parecer la siguiente operaciÛn se puede poner en un condicional;
-        m·s detalles en http://en.cppreference.com/w/cpp/language/dynamic_cast
+        Al parecer la siguiente operaci√≥n se puede poner en un condicional;
+        m√°s detalles en http://en.cppreference.com/w/cpp/language/dynamic_cast
      */
      if (IntegerCompara * ic = dynamic_cast<IntegerCompara *>(c)){
         return (this->dato < ic->dato);
@@ -27,8 +27,8 @@ bool IntegerCompara::mayorQue(Compara *c){
 bool IntegerCompara::menorQue(Compara *c){
      /*
         IntegerCompara * ic = (IntegerCompara *) c;
-        Al parecer la siguiente operaciÛn se puede poner en un condicional;
-        m·s detalles en http://en.cppreference.com/w/cpp/language/dynamic_cast
+        Al parecer la siguiente operaci√≥n se puede poner en un condicional;
+        m√°s detalles en http://en.cppreference.com/w/cpp/language/dynamic_cast
      */
      if (IntegerCompara * ic = dynamic_cast<IntegerCompara *>(c)){
         return (this->dato < ic->dato);
@@ -39,8 +39,8 @@ bool IntegerCompara::menorQue(Compara *c){
 bool IntegerCompara::igualQue(Compara *c){
      IntegerCompara * ic;
      /*
-        Al parecer la siguiente operaciÛn se puede poner en un condicional;
-        m·s detalles en http://en.cppreference.com/w/cpp/language/dynamic_cast
+        Al parecer la siguiente operaci√≥n se puede poner en un condicional;
+        m√°s detalles en http://en.cppreference.com/w/cpp/language/dynamic_cast
      */
      if (IntegerCompara * ic = dynamic_cast<IntegerCompara *>(c)){
         return (this->dato == ic->dato);

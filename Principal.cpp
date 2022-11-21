@@ -1,4 +1,4 @@
-
+Ôªø
 #include <iostream>
 #include <cstdio>
 #include "Compara.h"
@@ -17,19 +17,19 @@ int main (){
             IntegerCompara.h)
 
             2. Declarar objetos de la misma,
-            que ser·n construidos por medio de alguna de las clases
+            que ser√°n construidos por medio de alguna de las clases
             completamente definidas que heredan de la misma:
 
             Compara * d1 = new IntegerCompara (5), * s1 = new StringCompara ("hola");
 
-            3. Declarar estructuras genÈricas de los mismos;
-            atenciÛn, porque tambiÈn podemos construir el array
+            3. Declarar estructuras gen√©ricas de los mismos;
+            atenci√≥n, porque tambi√©n podemos construir el array
             por medio de la "interface", aunque la misma no
             tenga constructores propios;
         */
 
          /*
-            Es importante el uso de punteros para que los mÈtodos
+            Es importante el uso de punteros para que los m√©todos
             "mayorQue (Compara *): bool", "menorQue (Compara *): bool" ...
             se comporten de modo polimorfo
         */
@@ -48,22 +48,22 @@ int main (){
             ToString * i1 = new IntegerCompara (i * i);
             v [i] = i1;
 			/* Construimos una cadena a partir del int "i";
-			 La funciÛn adecuada es "sprintf" */
+			 La funci√≥n adecuada es "sprintf" */
 			char buffer [50];
 			sprintf (buffer, "%d%d%d", i, i, i);
 			ToString * sc = new StringCompara (buffer);
 			v1 [i] = sc;
 		}
         /*
-            Mostramos las componentes del array gracias al mÈtodo
-            "toString(): void" que pertenecÌa a la clase "Compara"
+            Mostramos las componentes del array gracias al m√©todo
+            "toString(): void" que pertenec√≠a a la clase "Compara"
         */
 
         for (int i = 0; i < 50; i++){
-            cout << "El elemento en la posiciÛn " << i << " del vector de IntegerCompara es ";
+            cout << "El elemento en la posici√≥n " << i << " del vector de IntegerCompara es ";
             v [i]->toString();
             // cout << endl;
-            cout << "El elemento en la posiciÛn " << i << " del vector de StringCompara es ";
+            cout << "El elemento en la posici√≥n " << i << " del vector de StringCompara es ";
             v1 [i]->toString();
             // cout << endl;
         }

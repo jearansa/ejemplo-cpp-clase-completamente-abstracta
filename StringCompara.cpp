@@ -1,4 +1,4 @@
-
+ï»¿
 #include "StringCompara.h"
 #include <cstring>
 #include <iostream>
@@ -11,9 +11,9 @@ StringCompara::StringCompara(string d){
 
 bool StringCompara::mayorQue(Compara *c){
      /*
-        Observa la conversión de tipos que hacemos aquí,
+        Observa la conversiÃ³n de tipos que hacemos aquÃ­,
         al estilo de la que realizamos en Java;
-        La operación que hace la conversión de tipos se
+        La operaciÃ³n que hace la conversiÃ³n de tipos se
         denomina dynamic_cast<nombre_tipo>:
      */
      if (StringCompara * sc = dynamic_cast<StringCompara *>(c)){
