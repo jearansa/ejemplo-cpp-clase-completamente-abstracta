@@ -56,7 +56,7 @@ int main (){
 		}
         /*
             Mostramos las componentes del array gracias al método
-            "toString(): void" que pertenecía a la clase "Compara"
+            "toString(): void" que pertenecía a la clase "ToString"
         */
 
         for (int i = 0; i < 50; i++){
