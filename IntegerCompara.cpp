@@ -19,7 +19,7 @@ bool IntegerCompara::mayorQue(Compara *c){
         más detalles en http://en.cppreference.com/w/cpp/language/dynamic_cast
      */
      if (IntegerCompara * ic = dynamic_cast<IntegerCompara *>(c)){
-        return (this->dato < ic->dato);
+        return (this->dato > ic->dato);
      }
      return false;
 }
