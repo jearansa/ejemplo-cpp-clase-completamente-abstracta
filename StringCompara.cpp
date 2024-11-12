@@ -36,6 +36,6 @@ bool StringCompara::igualQue(Compara *c){
      return false;
 }
 
-void StringCompara::toString( ) {
-     cout << this->dato << endl;
+string StringCompara::toString( ) {
+     return this->dato;
 }

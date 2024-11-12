@@ -33,7 +33,7 @@ class IntegerCompara: public Compara, public ToString
         bool mayorQue(Compara *);
         bool menorQue(Compara *);
         bool igualQue(Compara *);
-        void toString ();
+        string toString ();
 };
 
 #endif

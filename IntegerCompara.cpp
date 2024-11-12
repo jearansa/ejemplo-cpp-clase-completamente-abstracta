@@ -15,8 +15,8 @@ bool IntegerCompara::mayorQue(Compara *c){
         al estilo de la que realizamos en Java;
         La operación que hace la conversión de tipos se
         denomina dynamic_cast<nombre_tipo>:
-        Al parecer la siguiente operación se puede poner en un condicional;
-        más detalles en http://en.cppreference.com/w/cpp/language/dynamic_cast
+        la siguiente operación se puede poner en un condicional;
+        más detalles en https://en.cppreference.com/w/cpp/language/dynamic_cast
      */
      if (IntegerCompara * ic = dynamic_cast<IntegerCompara *>(c)){
         return (this->dato > ic->dato);
@@ -27,7 +27,7 @@ bool IntegerCompara::mayorQue(Compara *c){
 bool IntegerCompara::menorQue(Compara *c){
      /*
         IntegerCompara * ic = (IntegerCompara *) c;
-        Al parecer la siguiente operación se puede poner en un condicional;
+        La siguiente operación se puede poner en un condicional;
         más detalles en http://en.cppreference.com/w/cpp/language/dynamic_cast
      */
      if (IntegerCompara * ic = dynamic_cast<IntegerCompara *>(c)){
@@ -39,7 +39,7 @@ bool IntegerCompara::menorQue(Compara *c){
 bool IntegerCompara::igualQue(Compara *c){
      IntegerCompara * ic;
      /*
-        Al parecer la siguiente operación se puede poner en un condicional;
+        La siguiente operación se puede poner en un condicional;
         más detalles en http://en.cppreference.com/w/cpp/language/dynamic_cast
      */
      if (IntegerCompara * ic = dynamic_cast<IntegerCompara *>(c)){
@@ -48,6 +48,6 @@ bool IntegerCompara::igualQue(Compara *c){
      return false;
 }
 
-void IntegerCompara::toString( ) {
-     cout << this->dato << endl;
+string IntegerCompara::toString( ) {
+   return to_string (this->dato);
 }
