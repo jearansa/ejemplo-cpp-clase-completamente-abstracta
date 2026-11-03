@@ -2,14 +2,10 @@
 #include <iostream>
 #include "StringCompara.h"
 #include "IntegerCompara.h"
-#include <Windows.h>
 
 using namespace std;
 
 int main (){
-	SetConsoleOutputCP(CP_UTF8);
-
-
 	/*
        Las clases completamente abstractas pueden ser usadas,
        al igual que las clases abstractas, para:
